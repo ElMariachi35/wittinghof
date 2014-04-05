@@ -1,0 +1,409 @@
+/*-------------------------------------------------*/
+/* Fonts
+/*-------------------------------------------------*/
+@font-face {
+	font-family: "Devil";
+	src: url(../fonts/Diavlo_MEDIUM_II_37.otf) format("opentype");
+}
+
+@font-face {
+	font-family: 'Handwritten';
+	src: url('../fonts/DancingScriptOTRegular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-------------------------------------------------*/
+/* General
+/*-------------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: Verdana;
+	background: url(../img/background_structure.png);
+}
+
+a,a:hover,a:focus,a:visited,a:active {
+	color: #53583f;
+	outline: none;
+}
+
+.header {
+	height: 95px;
+	padding-top: 26px;
+	background-color: #dcc99f;
+	margin-top: 20px;
+}
+
+.header-top {
+	float: right;
+	margin-right: -38px;
+}
+
+.header-top a {
+	text-decoration: underline !important;
+}
+
+.container-wrapper {
+	background-color: #8a563a;
+}
+
+.container {
+	min-width: 320px;
+	background-color: white;
+	margin-top: 60px;
+	border: 10px solid #53583f;
+}
+
+/*-------------------------------------------------*/
+/* Menu
+/*-------------------------------------------------*/
+@media ( max-width : 1200px) {
+	.menu-item a {
+		height: 40px !important;
+		font-size: 20px !important;
+	}
+	.menu-bar {
+		margin-top: 27px !important;
+	}
+}
+
+@media ( max-width :992px) {
+	.menu-bar {
+		display: none;
+	}
+	.header {
+		padding-top: 58px;
+	}
+	.menu-button {
+		display: block !important;
+	}
+	.menu-selection-bar {
+		display: none;
+	}
+	.slide-show {
+		margin-top: 3px;
+	}
+}
+
+@media ( min-width : 991px) {
+	.collapse-menu {
+		display: none !important;
+	}
+}
+
+@media ( max-width : 320px) {
+	.menu-button {
+		left: 231px;
+		float: none !important;
+	}
+}
+
+.logo {
+	max-width: 100%;
+	min-height: 92px;
+	min-width: 210px;
+	margin-left: -20px;
+	display: none;
+}
+
+.menu-bar {
+	margin-top: 17px;
+}
+
+.menu-bar>div {
+	float: left;
+}
+
+.menu-item {
+	width: 20%;
+	height: 30px;
+	text-align: center;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-top: 2px;
+	border-radius: 3px;
+	font-family: Devil;
+}
+
+.menu-item a {
+	color: #8a563a;
+	display: block;
+	height: 50px;
+	padding-top: 10px;
+	font-size: 25px;
+}
+
+.menu-item>a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.menu-button {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	top: 85px;
+	margin-top: -92px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: rgba(255, 255, 255, 0.3);
+	background-image: none;
+	border: 1px solid #8a563a;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+
+.menu-button:focus {
+	outline: none;
+}
+
+.menu-button .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	border: 1px solid #8a563a;
+}
+
+.menu-button .icon-bar+.icon-bar {
+	margin-top: 4px;
+}
+
+.menu-selection-bar>div {
+	float: left;
+}
+
+.selection-item {
+	height: 4px;
+	width: 20%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.menu-selection-bar .active {
+	background-color: #8a563a;
+}
+
+.collapse-menu {
+	background-color: #dcc99f;
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: 37px;
+	z-index: 100;
+	display: none;
+	padding-bottom: 25px;
+}
+
+.collapse-menu-item {
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 10px;
+	width: auto;
+}
+
+.collapse-menu-item a {
+	padding-left: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+/*-------------------------------------------------*/
+/* Slides 
+/*-------------------------------------------------*/
+#slides {
+	width: 1170px;
+}
+
+.slide-show {
+	margin-left: -15px;
+	margin-bottom: 50px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.slidesjs-stop {
+	display: none !important;
+}
+
+/*-------------------------------------------------*/
+/* Index 
+/*-------------------------------------------------*/
+.text-sub-header {
+	font-weight: bold;
+}
+
+.img {
+	max-width: 100%;
+}
+
+.header-index {
+	font-size: 35px;
+	text-align: center;
+	line-height: 100px;
+	padding-right: 215px !important;
+	margin-top: 100px;
+}
+
+.header-slogan {
+	font-family: Handwritten;
+	text-align: center;
+	color: #8a563a;
+	font-size: 30px;
+	padding-left: 190px !important;
+	margin-bottom: 100px;
+}
+
+/*-------------------------------------------------*/
+/* Subpages
+/*-------------------------------------------------*/
+.header-sub-page {
+	border-bottom: 1px solid #53583f;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.header-sub-page-title {
+	border-bottom: 3px solid #53583f;
+	color: #53583f;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header-sub-page-title-separator {
+	font-size: 18px;
+	font-weight: lighter;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #53583f;
+}
+
+.header-sub-page-subtitle {
+	color: #dcc99f;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+@media ( max-width : 600px) {
+	.deer-logo {
+		display: none;
+	}
+}
+
+.deer-logo {
+	background: url(../img/deer1.jpg);
+	float: right;
+	margin-top: -100px;
+	max-width: 100%;
+	max-height: 100px;
+	opacity: 0.5;
+	margin-right: 40px;
+}
+
+.text-header {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: #7b7873;
+}
+
+.text-item {
+	margin-bottom: 50px;
+}
+
+.text-item img {
+	width: 40%;
+	margin: 20px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*-------------------------------------------------*/
+/* Footer
+/*-------------------------------------------------*/
+@media ( max-width : 768px) {
+	.img-urlaub-am-bauernhof {
+		float: left !important;
+	}
+	.footer-element {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.footer {
+	margin-top: 15px;
+	background-color: #dcc99f;
+	color: #8a563a;
+}
+
+.footer a {
+	color: #8a563a;
+}
+
+.footer-header {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.footer-element {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 50px;
+}
+
+.footer-element.middle {
+	padding-left: 105px;
+	}
+
+.footer-body {
+	padding-left: 10px;
+	font-size: 12px;
+}
+
+.img-urlaub-am-bauernhof {
+	float: right;
+	min-height: 130px;
+}
+
+.urlaub-am-bauernhof-area {
+	min-height: 130px;
+}
+
+/*-------------------------------------------------*/
+/* Gallery
+/*-------------------------------------------------*/
+.image-title {
+	color: #53583f;
+}
+
+.gallery-margin-top {
+	margin-top: 90px;
+}
+
+/*-------------------------------------------------*/
+/* Custom Bootstrap
+/*-------------------------------------------------*/
+.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12
+	{
+	padding-left: 30px;
+	padding-right: 30px;
+}
